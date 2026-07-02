@@ -1,0 +1,215 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Simsiz quloqchin Pro",
+      "description": "Shovqinni bekor qiluvchi, 30 soatgacha batareya quvvati bilan simsiz quloqchin.",
+        "price": 349000,
+      "rating": 4.6,
+      "stack": 24,
+      "brand": "SoundMax",
+      "category": "elektronika",
+      "thumbnail": "https://picsum.photos/seed/prod1/400/400",
+      "images": [
+        "https://picsum.photos/seed/prod1a/800/800",
+        "https://picsum.photos/seed/prod1b/800/800"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Aqlli soat X2",
+      "description": "Yurak urishi, uyqu monitoringi va 7 kunlik batareya bilan aqlli soat.",
+      "price": 890000,
+      "rating": 4.3,
+      "stack": 12,
+      "brand": "TimeTech",
+      "category": "elektronika",
+      "thumbnail": "https://picsum.photos/seed/prod2/400/400",
+      "images": [
+        "https://picsum.photos/seed/prod2a/800/800",
+        "https://picsum.photos/seed/prod2b/800/800"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Erkaklar futbolkasi (Classic Fit)",
+      "description": "100% paxta, kundalik kiyish uchun qulay futbolka.",
+      "price": 129000,
+      "rating": 4.1,
+      "stack": 50,
+      "brand": "UrbanWear",
+      "category": "kiyim-kechak",
+      "thumbnail": "https://picsum.photos/seed/prod3/400/400",
+      "images": [
+        "https://picsum.photos/seed/prod3a/800/800"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Oshxona blenderi 1200W",
+      "description": "Quvvatli motor, 6 xil tezlik rejimi, oson tozalanadigan idish.",
+      "price": 465000,
+      "rating": 4.5,
+      "stack": 8,
+      "brand": "HomeChef",
+      "category": "uy-jihozlari",
+      "thumbnail": "https://picsum.photos/seed/prod4/400/400",
+      "images": [
+        "https://picsum.photos/seed/prod4a/800/800"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Yoga gilamchasi (Premium)",
+      "description": "Kaymaydigan sirt, 6mm qalinlik, ekologik toza material.",
+      "price": 189000,
+      "rating": 4.7,
+      "stack": 30,
+      "brand": "FitLife",
+      "category": "sport-va-dam-olish",
+      "thumbnail": "https://picsum.photos/seed/prod5/400/400",
+      "images": [
+        "https://picsum.photos/seed/prod5a/800/800"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Vitamin C serumi",
+      "description": "Terini yorqinlashtiruvchi va yoshartiruvchi kunlik serum, 30ml.",
+      "price": 95000,
+      "rating": 4.4,
+      "stack": 40,
+      "brand": "GlowUp",
+      "category": "gozallik-va-parvarish",
+      "thumbnail": "https://picsum.photos/seed/prod6/400/400",
+      "images": [
+        "https://picsum.photos/seed/prod6a/800/800"
+      ]
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "Elektronika", "slug": "elektronika" },
+    { "id": 2, "name": "Kiyim-kechak", "slug": "kiyim-kechak" },
+    { "id": 3, "name": "Uy jihozlari", "slug": "uy-jihozlari" },
+    { "id": 4, "name": "Sport va dam olish", "slug": "sport-va-dam-olish" },
+    { "id": 5, "name": "Go'zallik va parvarish", "slug": "gozallik-va-parvarish" }
+  ],
+  "users": [
+    { "id": 1, "fullName": "Akhmadbek Yusupov", "email": "akhmadbek@example.com" },
+    { "id": 2, "fullName": "Oybek Otabekovich", "email": "oybek@example.com" }
+  ],
+  "cartItems": [
+    {
+      "id": 1,
+      "product": {
+        "id": 1,
+        "title": "Simsiz quloqchin Pro",
+        "description": "Shovqinni bekor qiluvchi, 30 soatgacha batareya quvvati bilan simsiz quloqchin.",
+        "price": 349000,
+        "rating": 4.6,
+        "stack": 24,
+        "brand": "SoundMax",
+        "category": "elektronika",
+        "thumbnail": "https://picsum.photos/seed/prod1/400/400",
+        "images": [
+          "https://picsum.photos/seed/prod1a/800/800",
+          "https://picsum.photos/seed/prod1b/800/800"
+        ]
+      },
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "product": {
+        "id": 5,
+        "title": "Yoga gilamchasi (Premium)",
+        "description": "Kaymaydigan sirt, 6mm qalinlik, ekologik toza material.",
+        "price": 189000,
+        "rating": 4.7,
+        "stack": 30,
+        "brand": "FitLife",
+        "category": "sport-va-dam-olish",
+        "thumbnail": "https://picsum.photos/seed/prod5/400/400",
+        "images": [
+          "https://picsum.photos/seed/prod5a/800/800"
+        ]
+      },
+      "quantity": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "product": {
+            "id": 2,
+            "title": "Aqlli soat X2",
+            "description": "Yurak urishi, uyqu monitoringi va 7 kunlik batareya bilan aqlli soat.",
+            "price": 890000,
+            "rating": 4.3,
+            "stack": 12,
+            "brand": "TimeTech",
+            "category": "elektronika",
+            "thumbnail": "https://picsum.photos/seed/prod2/400/400",
+            "images": [
+              "https://picsum.photos/seed/prod2a/800/800",
+              "https://picsum.photos/seed/prod2b/800/800"
+            ]
+          },
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 890000,
+      "status": "pending",
+      "createdAt": "2026-06-20T09:15:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "items": [
+        {
+          "id": 2,
+          "product": {
+            "id": 3,
+            "title": "Erkaklar futbolkasi (Classic Fit)",
+            "description": "100% paxta, kundalik kiyish uchun qulay futbolka.",
+            "price": 129000,
+            "rating": 4.1,
+            "stack": 50,
+            "brand": "UrbanWear",
+            "category": "kiyim-kechak",
+            "thumbnail": "https://picsum.photos/seed/prod3/400/400",
+            "images": [
+              "https://picsum.photos/seed/prod3a/800/800"
+            ]
+          },
+          "quantity": 3
+        },
+        {
+          "id": 3,
+          "product": {
+            "id": 6,
+            "title": "Vitamin C serumi",
+            "description": "Terini yorqinlashtiruvchi va yoshartiruvchi kunlik serum, 30ml.",
+            "price": 95000,
+            "rating": 4.4,
+            "stack": 40,
+            "brand": "GlowUp",
+            "category": "gozallik-va-parvarish",
+            "thumbnail": "https://picsum.photos/seed/prod6/400/400",
+            "images": [
+              "https://picsum.photos/seed/prod6a/800/800"
+            ]
+          },
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 577000,
+      "status": "completed",
+      "createdAt": "2026-06-25T14:30:00.000Z"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import {BrouserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import {HomePage} from "../pages/HomePage";
 import {ProductPage} from "../pages/ProductPage";
@@ -8,7 +8,7 @@ import {OrdersPage} from "../pages/OrdersPage";
 
 export function AppRouter() {
     return (
-        <BrouserRouter> 
+        <BrowserRouter> 
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/product/:id" element={<ProductPage />} />
@@ -16,6 +16,6 @@ export function AppRouter() {
                 <Route path="/catalog" element={<CatalogPage />} />
                 <Route path="/orders" element={<OrdersPage />} />
             </Routes>
-        </BrouserRouter>
+        </BrowserRouter>    
     );
 }

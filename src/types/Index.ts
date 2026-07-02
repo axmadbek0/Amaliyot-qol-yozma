@@ -36,4 +36,4 @@ export interface Order {
     totalAmount: number;
     status: string;
     createdAt: string;
-}
+}
