@@ -1,12 +1,28 @@
-export default function ProductCart() {
+import  {type Product } from "../types/Index";
+import { Link } from "react-router-dom";
+
+interface ProductCartProps {
+  product: Product;
+  onAddToCart: (product: Product) => void;
+}
+
+export default function ProductCart({ product, onAddToCart }: ProductCartProps) {
   return (
-    <div className="p-4 bg-white shadow rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
-      <div className="h-40 bg-gray-200 rounded-md mb-4 flex items-center justify-center text-gray-400">Image</div>
-      <h2 className="text-lg font-semibold text-gray-800">Product Name</h2>
-      <p className="text-blue-500 font-bold mt-1">$99.99</p>
-      <button className="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors">
-        Add to Cart
-      </button>
+    <div className="bg-white rounded-3xl shadow-sm border border-pink-50 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full">
+      <img className="h-48 w-full object-cover" src={product.thumbnail} alt={product.title}/>
+      <div className="p-6 flex flex-col flex-grow">
+        <h2 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h2>
+        <p className="text-gray-500 text-sm mb-4 flex-grow">{product.description}</p>
+        <div className="flex justify-between items-center mt-auto pt-4">
+          <p className="text-2xl font-bold text-pink-500">${product.price.toFixed(2)}</p>
+          <button
+            className="bg-pink-500 text-white font-semibold px-4 py-2 rounded-xl shadow-sm hover:bg-pink-600 hover:shadow-md transition duration-300 transform hover:-translate-y-1"
+            onClick={() => onAddToCart(product)}>
+            {product.stack > 0 ? "Add to Cart" : "Out of Stock"}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
+// Uyga vazifasi: product cartni ishlatish

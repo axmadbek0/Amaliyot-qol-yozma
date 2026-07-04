@@ -37,3 +37,8 @@ export interface Order {
     status: string;
     createdAt: string;
 }
+
+export interface Button {
+    text: string;
+    onClick: () => void;
+}
